@@ -30,16 +30,31 @@
 
 // Write a program to find the largest number in an array.
 
-const number = [1, 23, 47, 98, 76];
+// const number = [1, 23, 47, 98, 76];
 
-function largestElement(arr) {
-  let max = arr[0];
+// function largestElement(arr) {
+//   let max = arr[0];
 
-  for (let i = 1; i < arr.length; i++) {
-    if (arr[i] > max) {
-      max = arr[i];
+//   for (let i = 1; i < arr.length; i++) {
+//     if (arr[i] > max) {
+//       max = arr[i];
+//     }
+//   }
+//   return max;
+// }
+// console.log(largestElement(number));
+
+// Create a function to count the number of vowels in a string.
+
+function checkVowels(str) {
+  let count = 0;
+  const vowels = "aeiouAEIOU";
+
+  for (let i = 0; i < str.length; i++) {
+    if (vowels.includes(str[i])) {
+      count++;
     }
   }
-  return max;
+  return count;
 }
-console.log(largestElement(number));
+console.log(checkVowels("HELLO WORLFe"));
