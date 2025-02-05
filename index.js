@@ -18,12 +18,28 @@
 
 // console.log(reversed);
 
-const reverseStr = (str) => {
-  let reversed = "";
+// const reverseStr = (str) => {
+//   let reversed = "";
 
-  for (let i = str.length - 1; i >= 0; i--) {
-    reversed += str[i];
+//   for (let i = str.length - 1; i >= 0; i--) {
+//     reversed += str[i];
+//   }
+//   return reversed;
+// };
+// console.log(reverseStr("aidni"));
+
+// Write a program to find the largest number in an array.
+
+const number = [1, 23, 47, 98, 76];
+
+function largestElement(arr) {
+  let max = arr[0];
+
+  for (let i = 1; i < arr.length; i++) {
+    if (arr[i] > max) {
+      max = arr[i];
+    }
   }
-  return reversed;
-};
-console.log(reverseStr("aidni"));
+  return max;
+}
+console.log(largestElement(number));
