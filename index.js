@@ -87,6 +87,14 @@ const isNumberPalindrome = (num) => {
 
   return original === reverse ? "Palindrome" : "not Palindrome";
 };
-console.log(isNumberPalindrome(-121));
-console.log(isNumberPalindrome(12));
-console.log(isNumberPalindrome(11));
+// console.log(isNumberPalindrome(-121));
+// console.log(isNumberPalindrome(12));
+// console.log(isNumberPalindrome(11));
+
+// Implement a program to remove duplicates from an array.
+const arr = [1, 2, 298, 9, 8, 9, 7, 8, 9, 8, 3, 2, 2, 34, 34];
+
+const removeDuplicate = (arr) => {
+  return [...new Set(arr)];
+};
+console.log(removeDuplicate(arr));
