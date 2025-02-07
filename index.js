@@ -16,7 +16,7 @@ const evenOdd = (num) => {
 const str = "hellobapunu";
 const reversed = str.split("").reverse().join("");
 
-console.log(reversed);
+// console.log(reversed);
 
 const reverseStr = (str) => {
   let reversed = "";
@@ -58,3 +58,20 @@ function checkVowels(str) {
   return count;
 }
 // console.log(checkVowels("HELLO WORLFe"));
+
+// Write a function to check if a word is a palindrome.
+
+const isPalindrome = (str) => {
+  let reverse = "";
+  for (let i = str.length - 1; i >= 0; i--) {
+    reverse += str[i];
+  }
+
+  if (reverse === str) {
+    return "palindrome";
+  } else {
+    return "not palindrome";
+  }
+};
+// console.log(palindromeNumber("hohl"));
+// console.log(palindromeNumber("hoh"));
