@@ -63,15 +63,30 @@ function checkVowels(str) {
 
 const isPalindrome = (str) => {
   let reverse = "";
+
   for (let i = str.length - 1; i >= 0; i--) {
     reverse += str[i];
   }
 
-  if (reverse === str) {
-    return "palindrome";
-  } else {
-    return "not palindrome";
-  }
+  return reverse === str ? "palindrome" : "not palindrome";
 };
-// console.log(palindromeNumber("hohl"));
-// console.log(palindromeNumber("hoh"));
+// console.log(isPalindrome("oho"));
+// console.log(isPalindrome("Hello"));
+
+// check number is palindrome or not
+
+const isNumberPalindrome = (num) => {
+  if (num < 0) return "Not Palindrome";
+  let original = num.toString();
+
+  let reverse = "";
+
+  for (let i = original.length - 1; i >= 0; i--) {
+    reverse += original[i];
+  }
+
+  return original === reverse ? "Palindrome" : "not Palindrome";
+};
+console.log(isNumberPalindrome(-121));
+console.log(isNumberPalindrome(12));
+console.log(isNumberPalindrome(11));
