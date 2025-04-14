@@ -35,5 +35,5 @@ const reverseString = (str) => {
   }
 };
 
-// console.log(reverseString("oho"));
-// console.log(reverseString("hho"));
+console.log(reverseString("oho"));
+console.log(reverseString("hho"));
